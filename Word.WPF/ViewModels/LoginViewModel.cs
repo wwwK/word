@@ -3,7 +3,6 @@
     using System.Threading.Tasks;
     using System.Windows.Input;
     using Base;
-    using Security;
 
     /// <inheritdoc />
     /// <summary>
@@ -32,7 +31,7 @@
 
         #endregion
 
-        #region MyRegion
+        #region Methods
 
         /// <summary>
         ///     Attemps to log the user in.
@@ -41,13 +40,7 @@
         /// <returns></returns>
         private async Task Login(object paramater)
         {
-            await RunCommand(() => LoginIsRunning, async () =>
-            {
-                await Task.Delay(500);
-
-                var email = Email;
-                var password = (paramater as IHavePassword)?.SecureString.Unsecure();
-            });
+            await RunCommand(() => LoginIsRunning, async () => { await Task.Delay(5000); });
         }
 
         #endregion

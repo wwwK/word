@@ -1,14 +1,13 @@
 ﻿namespace KS.Word.Pages
 {
     using System.Security;
-    using ViewModels;
     using ViewModels.Base;
 
     /// <inheritdoc cref="BasePage{TVM}" />
     /// <summary>
     ///     Interaction logic for login page.
     /// </summary>
-    public partial class LoginPage : BasePage<LoginViewModel>, IHavePassword
+    public partial class LoginPage : IHavePassword
     {
         public LoginPage()
         {

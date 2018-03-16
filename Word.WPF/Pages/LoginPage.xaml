@@ -3,8 +3,6 @@
                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-                xmlns:page="clr-namespace:KS.Word.Pages"
-                xmlns:local="clr-namespace:KS.Word"
                 xmlns:pages="clr-namespace:KS.Word.Pages"
                 xmlns:viewModels="clr-namespace:KS.Word.ViewModels"
                 xmlns:word="clr-namespace:KS.Word"

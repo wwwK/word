@@ -7,12 +7,14 @@
     using System.Threading.Tasks;
     using Expressions;
     using Properties;
+    using PropertyChanged;
 
     /// <inheritdoc />
     /// <summary>
     ///     A base class for view model that trigger property changed events as needed.
     /// </summary>
-    public abstract class BaseViewModel : INotifyPropertyChanged
+    [AddINotifyPropertyChangedInterface]
+    public class BaseViewModel : INotifyPropertyChanged
     {
         /// <inheritdoc />
         /// <summary>

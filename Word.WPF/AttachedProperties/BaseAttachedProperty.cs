@@ -47,7 +47,7 @@
         public static readonly DependencyProperty ValueProperty =
             DependencyProperty.RegisterAttached("Value", typeof(TProperty),
                 typeof(BaseAttachedProperty<TParent, TProperty>),
-                new PropertyMetadata(OnValuePropertyChanged));
+                new UIPropertyMetadata(OnValuePropertyChanged));
 
         /// <summary>
         ///     The callback event when the <see cref="ValueProperty" /> is changed.
@@ -72,6 +72,7 @@
         {
             return (TProperty) d.GetValue(ValueProperty);
         }
+
 
         /// <summary>
         ///     Set's the value to the property.
